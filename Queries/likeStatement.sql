@@ -20,6 +20,12 @@ select *
 from employees
 where first_name like '_a%' and SALARY>5000;
 
+select min(salary) from employees;
+select max(salary) from employees;
+select avg(salary) from employees;
+select sum(salary) from employees;
+
+
 /*-- get me all info who is working as IT _PROG or SA_REP
 select * from employees
 where job_id in('IT_PROG','SA_REP');
