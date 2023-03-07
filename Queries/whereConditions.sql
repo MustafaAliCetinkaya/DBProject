@@ -9,4 +9,6 @@ select * from EMPLOYEES where DEPARTMENT_ID in (30);
 select * from EMPLOYEES where DEPARTMENT_ID in (30,60);
 select * from EMPLOYEES where DEPARTMENT_ID in (60,100);
 
-select * from COUNTRIES where COUNTRY_NAME in ('BE');
+select * from COUNTRIES where REGION_ID in (1,2);
+select * from COUNTRIES where COUNTRY_ID in ('AR','CA');
+select * from COUNTRIES where COUNTRY_ID between 'AR' and 'KW';
