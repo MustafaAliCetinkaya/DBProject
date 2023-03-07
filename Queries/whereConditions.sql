@@ -18,6 +18,17 @@ select * from COUNTRIES where COUNTRY_ID in ('AR','CA');
 select * from COUNTRIES where COUNTRY_ID not in ('AR','CA');
 select * from COUNTRIES where COUNTRY_ID between 'AR' and 'KW';
 
+select first_name,last_name,phone_number
+from employees
+where first_name = 'David';
+
+select first_name,last_name,phone_number
+from employees
+where first_name = 'David' and last_name = 'Lee';
+
+select * from employees
+where job_id = 'IT_PROG' or job_id = 'SA_REP';
+
 /*-- I want to see firstname lastname phone number of david(s)
 select first_name,last_name,phone_number
 from employees
