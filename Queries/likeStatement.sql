@@ -1,7 +1,27 @@
+/*WILDCARDS:
+starts with==Chars%
+  ends with==%Chars
+    contains==%Chars%*/
+
 select
     FIRST_NAME
 from EMPLOYEES
 where FIRST_NAME like 'Al%';
+
+select
+    COUNTRY_NAME
+from COUNTRIES
+where COUNTRY_NAME like 'A%';
+
+select
+    COUNTRY_NAME
+from COUNTRIES
+where COUNTRY_NAME like '%in%' or COUNTRY_NAME like 'A%' or COUNTRY_NAME like 'B%';
+
+select
+    COUNTRY_NAME
+from COUNTRIES
+where COUNTRY_NAME like '%ra%';
 
 select
     LAST_NAME
@@ -10,7 +30,7 @@ where LAST_NAME not like 'A%';
 
 select *
 from employees
-where first_name like '__z__';
+where first_name like '__z__' and LAST_NAME like 'A%';
 
 select *
 from employees
@@ -18,7 +38,7 @@ where first_name like '_a%';
 
 select *
 from employees
-where first_name like '_a%' and SALARY>5000;
+where first_name like '_a%' and SALARY>6000 and SALARY<10000;
 
 select min(salary) from employees;
 select max(salary) from employees;
