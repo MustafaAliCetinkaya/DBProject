@@ -11,9 +11,11 @@ select * from EMPLOYEES where DEPARTMENT_ID in (30,60);
 select * from EMPLOYEES where DEPARTMENT_ID in (60,100);
 
 select * from COUNTRIES where REGION_ID in (1,2);
+select * from COUNTRIES where REGION_ID not in (1,2);
 select * from COUNTRIES where COUNTRY_ID='AR';
 select * from COUNTRIES where COUNTRY_NAME='Italy';
 select * from COUNTRIES where COUNTRY_ID in ('AR','CA');
+select * from COUNTRIES where COUNTRY_ID not in ('AR','CA');
 select * from COUNTRIES where COUNTRY_ID between 'AR' and 'KW';
 
 /*-- I want to see firstname lastname phone number of david(s)

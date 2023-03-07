@@ -13,4 +13,6 @@ order by SALARY;
 select * from EMPLOYEES where SALARY>= 3000 and SALARY<=4000 order by SALARY;/*By default asc*/
 select * from EMPLOYEES where SALARY>= 3000 and SALARY<=4000 order by SALARY desc;
 
+select * from EMPLOYEES where SALARY not in (3000,4000,5000) order by SALARY desc;
+
 
