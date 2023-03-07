@@ -43,6 +43,7 @@ where first_name like '_a%' and SALARY>6000 and SALARY<10000;
 select min(salary) from employees;
 select max(salary) from employees;
 select avg(salary) from employees;
+select round(avg(salary),2) from employees;
 select sum(salary) from employees;
 
 
