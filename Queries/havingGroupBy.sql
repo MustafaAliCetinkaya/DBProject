@@ -5,6 +5,10 @@
   select JOB_ID, count (*) from EMPLOYEES group by JOB_ID;
   select JOB_ID, count (*) from EMPLOYEES group by JOB_ID order by count(JOB_ID) desc ;
 
+select FIRST_NAME, count(*)
+from EMPLOYEES
+group by FIRST_NAME order by count(*) desc ;
+
 select JOB_ID, max(SALARY) from EMPLOYEES group by JOB_ID;
 select JOB_ID, max(SALARY) from EMPLOYEES group by JOB_ID order by max(SALARY) desc ;
 

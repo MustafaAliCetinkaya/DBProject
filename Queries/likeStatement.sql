@@ -40,6 +40,8 @@ select *
 from employees
 where first_name like '_a%' and SALARY>6000 and SALARY<10000;
 
+select count(distinct first_name) from employees;
+
 select min(salary) from employees;
 select max(salary) from employees;
 select avg(salary) from employees;
