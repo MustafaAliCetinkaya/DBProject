@@ -32,3 +32,8 @@ select last_name from employees;
 select last_name, substr(last_name,0,1) from employees;
 select last_name, substr(last_name,0,1),first_name, substr(first_name,0,1)  from employees;
 select first_name, last_name, substr(last_name,0,1)|| substr(first_name,0,1)  from employees;
+
+/*trim() deletes the white spaces*/
+select last_name from employees;
+select concat('         ',last_name) from employees;
+select trim(concat('         ',last_name)) from employees;
