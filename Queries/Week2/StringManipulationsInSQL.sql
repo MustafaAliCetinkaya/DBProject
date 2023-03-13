@@ -4,3 +4,4 @@ select * from employees;
 select email from employees;
 /*Concatenation operator --> || */
 select email||'@gmail.com' from employees;
+select first_name||' '||last_name from employees;
