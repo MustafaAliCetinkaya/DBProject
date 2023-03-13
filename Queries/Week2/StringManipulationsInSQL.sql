@@ -15,6 +15,8 @@ select concat(concat(first_name,' '),last_name) from employees;
 /*Upper () and Lower () changes values to uppercase and lowercase*/
 select lower(first_name) from employees;
 select upper(first_name) from employees;
+select lower(email||'@gmail.com') as "full_email"
+from employees;
 
 /*INITCAP() converts only the initial letter to uppercase */
 select initcap(email) from employees;
