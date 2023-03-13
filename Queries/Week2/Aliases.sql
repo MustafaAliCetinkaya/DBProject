@@ -8,3 +8,5 @@ select lower(email||'@gmail.com') as "Email Addresses" from employees;
 --Table aliases
 select * from employees;
 select * from employees, job_history;
+select e.email, j.job_id from employees e, job_history j;
+
