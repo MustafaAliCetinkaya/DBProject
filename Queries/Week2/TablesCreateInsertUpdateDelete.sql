@@ -33,4 +33,10 @@ INSERT INTO Supplier (CompanyName, CompanyID, ContactName,
 VALUES ('Broodjes Huis', 1234, 'Henk de Groot',
         'Amsterdam', 'Netherlands', '5553828847');
 
+
+INSERT INTO Supplier (CompanyName, CompanyID, ContactName,
+                      City, Country, Phone)
+VALUES ('Alican Huis', 98765, 'Groot Hroat',
+        'Viana', 'Austria', '5324869706');
+
 select  * from Supplier;
