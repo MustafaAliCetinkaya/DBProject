@@ -29,4 +29,6 @@ select replace(first_name,'El','Al') from employees;
 
 /*Substr( ColumnName, beginningIndex, endingIndex )*/
 select last_name from employees;
-select substr(last_name,2,5) from employees;
+select last_name, substr(last_name,0,1) from employees;
+select last_name, substr(last_name,0,1),first_name, substr(first_name,0,1)  from employees;
+select first_name, last_name, substr(last_name,0,1)|| substr(first_name,0,1)  from employees;
