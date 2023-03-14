@@ -1,23 +1,24 @@
-create table Customer (
+create table NewCustomer (
                           FirstName varchar(20) not null ,
                           LastName varchar(20) not null,
                           City varchar(20) not null,
                           Country varchar(20) not null,
-                          Phone varchar(15) not null
+                          Phone varchar(15) not null,
+                          Address_id INTEGER
 );
 
-INSERT INTO Customer (FirstName, LastName, City, Country, Phone)
-VALUES ('Craig', 'Smith', 'New York', 'USA', '1-01-993 7800');
+INSERT INTO NewCustomer (FirstName, LastName, City, Country, Phone, Address_id)
+VALUES ('Craig', 'Smith', 'New York', 'USA', '1-01-993 7800',1);
 
 
-INSERT INTO Customer (FirstName, LastName, City, Country, Phone)
-VALUES ('Ali', 'Can', 'New Jersey', 'USA', '1-01-993 9900');
+INSERT INTO NewCustomer (FirstName, LastName, City, Country, Phone, Address_id)
+VALUES ('Ali', 'Can', 'New Jersey', 'USA', '1-01-993 9900',12);
 
 
-INSERT INTO Customer (FirstName, LastName, City, Country, Phone)
+INSERT INTO NewCustomer (FirstName, LastName, City, Country, Phone)
 VALUES ('Pella', 'Kar', 'Paris', 'France', '1-01-993 1100');
 
-select * from Customer;
+select * from NewCustomer;
 
 create table Supplier(
                          CompanyName varchar(20) not null,
