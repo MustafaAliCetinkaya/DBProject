@@ -40,3 +40,8 @@ VALUES ('Alican Huis', 98765, 'Groot Hroat',
         'Viana', 'Austria', '5324869706');
 
 select  * from Supplier;
+
+update SUPPLIER set CompanyName='Cydeo Corp' where CompanyID=1234;
+update SUPPLIER set City='Bregenz' where ContactName='Groot Hroat';
+
+delete from Supplier where CompanyName='Cydeo Corp';
