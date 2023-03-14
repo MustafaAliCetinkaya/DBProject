@@ -50,5 +50,9 @@ alter table MontessoriTeachers drop column TeacherLastName;
 
 commit ;
 
+TRUNCATE TABLE MontessoriTeachers;--Only deletes the data in the table, not the table itself
+select * from MONTESSORITEACHERS;
+drop table MontessoriTeachers;--Deletes everything including the table itself
+
 
 

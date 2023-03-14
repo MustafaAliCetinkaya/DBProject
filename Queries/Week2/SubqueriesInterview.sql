@@ -21,3 +21,7 @@ where salary = (select min(salary)
                 from (select distinct salary from employees order by salary
                         desc)
                 where rownum <15 );
+
+select max(salary) from employees;
+select max(salary) from employees where salary<(select max(salary) from employees);
+select * from employees where salary=(select max(salary) from employees where salary<(select max(salary) from employees));
