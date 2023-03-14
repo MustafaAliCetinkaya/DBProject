@@ -42,6 +42,10 @@ select *
 from (select * from employees order by salary desc)
 where rownum < 11;
 
+select min (salary) as LessMoney
+from (select * from employees order by salary desc)
+where rownum < 11;
+
 
 select *
 from (select * from employees order by salary asc)
