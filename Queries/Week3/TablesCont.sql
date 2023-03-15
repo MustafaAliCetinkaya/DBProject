@@ -74,3 +74,6 @@ commit ;
 select * from ScrumTeam;
 
 delete from ScrumTeam where EMP_ID=13;
+
+alter table ScrumTeam add salary INTEGER;
+update ScrumTeam set salary = 120000 where emp_id=2;
