@@ -28,8 +28,7 @@ on c.ADDRESS_ID=a.ADDRESS_ID;
 
 select * from employees;
 select LAST_NAME, FIRST_NAME, DEPARTMENT_ID from EMPLOYEES where LAST_NAME='Grant';
-select  DEPARTMENT_NAME, DEPARTMENT_ID from DEPARTMENTS where DEPARTMENT_ID=null;
-select * from departments;
+select  LAST_NAME, FIRST_NAME, DEPARTMENT_ID from EMPLOYEES where DEPARTMENT_ID is null;
 
 select first_name,last_name,department_name
 from employees e join departments d
@@ -42,3 +41,12 @@ from employees e left join departments d
 select first_name,last_name,department_name
 from employees e right join departments d
                            on e.department_id = d.department_id;
+
+select first_name,last_name,department_name
+from employees e full join departments d
+                           on e.department_id = d.department_id;
+
+--left outer join with where: returns the non matching records from left table
+select c.CUSTOMER_ID, c.FIRST_NAME, c.LAST_NAME, a.ADDRESS, a.PHONE
+    from CUSTOMER c left join ADDRESS a on c.ADDRESS_ID=a.ADDRESS_ID
+where c.ADDRESS_ID is null;
