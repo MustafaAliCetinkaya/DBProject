@@ -50,3 +50,12 @@ from employees e full join departments d
 select c.CUSTOMER_ID, c.FIRST_NAME, c.LAST_NAME, a.ADDRESS, a.PHONE
     from CUSTOMER c left join ADDRESS a on c.ADDRESS_ID=a.ADDRESS_ID
 where c.ADDRESS_ID is null;
+
+--right outer join with where: returns the non matching records from right table
+select c.CUSTOMER_ID, c.FIRST_NAME, c.LAST_NAME, a.ADDRESS, a.PHONE
+    from CUSTOMER c right join ADDRESS a on c.ADDRESS_ID=a.ADDRESS_ID
+where c.ADDRESS_ID is null;
+
+select c.CUSTOMER_ID, c.FIRST_NAME, c.LAST_NAME, a.ADDRESS, a.PHONE
+    from CUSTOMER c right join ADDRESS a on c.ADDRESS_ID=a.ADDRESS_ID
+where c.ADDRESS_ID is null or a.ADDRESS_ID is null;
