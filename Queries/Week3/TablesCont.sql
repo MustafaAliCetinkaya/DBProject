@@ -100,3 +100,9 @@ ALTER TABLE scrumteam RENAME TO agileteam;
 
 commit work;
 select * from agileteam;
+
+--truncate, if we want to delete all data from the table, but still keep the table structure, we use truncate
+TRUNCATE TABLE agileteam;
+
+--If we want to delete the table and data together
+DROP TABLE agileteam;
