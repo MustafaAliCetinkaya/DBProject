@@ -54,7 +54,7 @@ from address;
 
 create table ScrumTeam
 (
-    name    varchar(20) not null,
+    name varchar(20) not null,
     surname varchar(20),
     emp_id INTEGER primary key,
     jobTitle varchar(20) not null
@@ -62,10 +62,15 @@ create table ScrumTeam
 
 select * from ScrumTeam;
 
-insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Muhtar','Mahmut',234531,'SDET');
-
 insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Nadir','Sapurov',984531,'Tester');
 
 insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Harold','Finch',1,'Developer');
 
+insert into ScrumTeam VALUES ('Muhtar','Baboona',2,'SDET');
+
+insert into ScrumTeam VALUES ('Mustafa','Mahmur',13,'QA');
+
 commit ;
+select * from ScrumTeam;
+
+delete from ScrumTeam where EMP_ID=13;
