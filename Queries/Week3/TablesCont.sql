@@ -77,7 +77,26 @@ select * from ScrumTeam;
 
 delete from ScrumTeam where EMP_ID=13;
 
-alter table ScrumTeam add salary INTEGER;
+update ScrumTeam set emp_id=98 where emp_id=984531;
+
+ALTER TABLE ScrumTeam ADD salary varchar(10);
+
 update ScrumTeam set salary = 120000 where emp_id=2;
+UPDATE scrumteam SET salary = 100000 WHERE emp_id = 1;
+UPDATE scrumteam SET salary = 90000 WHERE emp_id = 76;
+UPDATE scrumteam SET salary = 120000 WHERE emp_id = 34;
 
+commit work;
+select * from ScrumTeam;
 
+--rename the column
+ALTER TABLE scrumteam RENAME COLUMN salary TO annual_salary;
+
+--delete, drop column
+ALTER TABLE scrumteam DROP COLUMN annual_salary;
+
+--how to change table name ?
+ALTER TABLE scrumteam RENAME TO agileteam;
+
+commit work;
+select * from agileteam;
