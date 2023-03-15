@@ -36,6 +36,15 @@ into testers values(2, 'Hakan', 105000)
 
 into testers values (3, 'Ibrohim', 100000)
 
+insert into developers values (13, 'Mike', 155000);
+insert into developers values (24, 'John', 142000);
+insert into developers values (35, 'Steven', 850000);
+insert into developers values (46, 'Maria', 120000);
+insert into testers values (18, 'Steven', 110000);
+insert into testers values(29, 'Adam', 105000);
+insert into testers values (30, 'Lex', 100000);
+commit work;
+
 select * from dual;
 select * from Testers;
 select * from Developers;
