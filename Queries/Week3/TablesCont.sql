@@ -60,5 +60,12 @@ create table ScrumTeam
     jobTitle varchar(20) not null
 );
 
-insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Muhtar','Mahmut',234531,'SDET');
 select * from ScrumTeam;
+
+insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Muhtar','Mahmut',234531,'SDET');
+
+insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Nadir','Sapurov',984531,'Tester');
+
+insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Harold','Finch',1,'Developer');
+
+commit ;
