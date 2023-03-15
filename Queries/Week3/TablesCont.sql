@@ -69,6 +69,8 @@ insert into ScrumTeam (name, surname, emp_id, jobTitle) VALUES ('Harold','Finch'
 insert into ScrumTeam VALUES ('Muhtar','Baboona',2,'SDET');
 
 insert into ScrumTeam VALUES ('Mustafa','Mahmur',13,'QA');
+INSERT INTO ScrumTeam VALUES ('Phoebe','Buffay',34, 'Tester');
+INSERT INTO ScrumTeam VALUES ('Michael','Scofield',76, 'QA');
 
 commit ;
 select * from ScrumTeam;
@@ -77,3 +79,5 @@ delete from ScrumTeam where EMP_ID=13;
 
 alter table ScrumTeam add salary INTEGER;
 update ScrumTeam set salary = 120000 where emp_id=2;
+
+
