@@ -40,4 +40,30 @@ select * from dual;
 select * from Testers;
 select * from Developers;
 
+select * from Developers
+    union
+select * from Testers;
+
+select Names from  Testers
+union       --removes the duplicated rows, ascending order by default
+select Names from  Developers;
+
+select Names from  Testers
+union all
+select Names from  Developers;
+
+select Names from  Testers
+minus       --returns the un-matching names from first list. Lİke A/B in sets
+select Names from  Developers;
+
+select Names from  Testers
+intersect       --returns the matching names from two list. Lİke in sets
+select Names from  Developers;
+
+--how to find duplicate names in employees table
+select first_name,count(*)
+from employees
+group by first_name
+having count(*) >1;
+
 commit work;
