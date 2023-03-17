@@ -106,3 +106,7 @@ TRUNCATE TABLE agileteam;
 
 --If we want to delete the table and data together
 DROP TABLE agileteam;
+
+select * from JOB_HISTORY;
+select JOB_ID, count(*) from JOB_HISTORY group by JOB_ID;
+select JOB_ID, count(*) from JOB_HISTORY group by JOB_ID having count(*)>=2;
