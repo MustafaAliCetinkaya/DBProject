@@ -13,7 +13,6 @@ select EMPLOYEE_ID, DEPARTMENTS.DEPARTMENT_ID from DEPARTMENTS, EMPLOYEES;
 select distinct SALARY from EMPLOYEES;
 select  DISTINCT MAX_SALARY from JOBS;
 
-
 /*select * from employees;
 -- reads all column from employees table
 select * from departments;

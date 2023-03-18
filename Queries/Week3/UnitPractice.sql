@@ -31,7 +31,7 @@ group by DEPARTMENT;
 
 Select substr(FIRST_NAME,1,3) from Worker;
 
-Select * from Worker order by FIRST_NAME asc,DEPARTMENT desc;
+Select * from Worker order by FIRST_NAME asc;
 
 
 
