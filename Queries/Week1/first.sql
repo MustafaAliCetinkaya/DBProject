@@ -37,3 +37,6 @@ FROM locations;
 
 select distinct first_name from employees;
 --remove duplicates
+
+SELECT first_name FROM employees
+WHERE first_name LIKE '___';
